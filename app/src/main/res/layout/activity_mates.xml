@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatesActivity">
+
+    <TextView
+            android:id="@+id/Mates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="293dp"
+            android:layout_marginBottom="404dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Mates"
+            android:textAlignment="center"
+            android:textColor="#0f0f0f"
+            android:textSize="48dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="136dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="24dp"
+            android:text="Войти"
+            android:background="@drawable/jojo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonRegister"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="136dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="24dp"
+            android:text="Регистрация"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonLogin" android:textColor="#FFFFFF"
+            android:background="#194277"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

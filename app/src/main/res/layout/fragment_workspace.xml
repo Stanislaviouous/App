@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.workspace.WorkspaceFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="125dp"
+            android:id="@+id/bac" android:background="#194277"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginStart="16dp">
+
+        <ImageView
+                android:src="@drawable/ic_map2_112809"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/buttonui" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="15dp"/>
+        <TextView
+                android:text="Карта"
+                android:layout_width="59dp"
+                android:layout_height="19dp"
+                android:id="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.507" app:layout_constraintTop_toBottomOf="@+id/buttonui"
+                app:layout_constraintBottom_toBottomOf="parent" android:gravity="center"
+                android:textColor="@android:color/white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="110dp"
+            android:layout_height="125dp"
+            android:id="@+id/fop" android:background="#194277"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toEndOf="@+id/bac"
+            android:layout_marginStart="16dp">
+
+        <ImageView
+                android:src="@drawable/ic_online_community"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/but" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="15dp"/>
+        <TextView
+                android:text="Оценки"
+                android:layout_width="59dp"
+                android:layout_height="19dp"
+                android:id="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.507" app:layout_constraintTop_toBottomOf="@+id/but"
+                app:layout_constraintBottom_toBottomOf="parent" android:gravity="center"
+                android:textColor="@android:color/white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

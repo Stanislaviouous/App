@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:id="@+id/raring_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12dp"
+                            android:padding="5dp"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image_use"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:src="@drawable/profile"
+                            app:civ_border_color="#F5F5F5"
+                            app:civ_border_width="2dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.497"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                            android:id="@+id/raring_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_margin="12dp"/>
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/rating_mod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:padding="5dp"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:paddingStart="16dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

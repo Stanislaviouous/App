@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+            android:layout_width="43dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/ic_reply_icon_184734"
+            android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/logup"
+            app:layout_constraintBottom_toBottomOf="@+id/logup" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:id="@+id/logup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Регистрация"
+            android:textAlignment="center"
+            android:textColor="#0f0f0f"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/passwordd"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emaill" />
+
+    <Button
+            android:id="@+id/RegIn"
+            android:layout_width="309dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:background="#194277"
+            android:text="Зарегистрироваться"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordd" android:textColor="#FFFFFF"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/emaill"
+        android:hint="Почта"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/log"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameFull" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/nameFull"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Фамилия и имя"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF"
+            android:id="@+id/scrollView"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".ui.profile.ProfileFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="match_parent"
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#F5F5F5"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:id="@+id/constraintLayout3"
+                android:layout_marginTop="4dp" android:layout_marginEnd="4dp" android:layout_marginStart="4dp">
+
+            <TextView
+                    android:text="Баллы: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView11"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    android:layout_marginTop="4dp" app:layout_constraintStart_toStartOf="@+id/textView9"
+                    android:textColor="#FFFFFF" android:textColorHighlight="#194277" android:textColorHint="#194277"
+                    android:textColorLink="#194277" android:background="#194277"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/countic"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="@+id/textView11"
+                    app:layout_constraintStart_toEndOf="@+id/textView11" android:layout_marginStart="4dp"
+                    android:textColor="#000000" android:textColorLink="#194277" android:textColorHint="#194277"/>
+            <TextView
+                    android:text="Почта: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView9"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    android:layout_marginTop="4dp" app:layout_constraintStart_toStartOf="@+id/textView8"
+                    android:textColor="#FFFFFF" android:textColorHighlight="#194277" android:textColorHint="#194277"
+                    android:textColorLink="#194277" android:background="#194277"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/emailic"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="@+id/textView9"
+                    android:layout_marginStart="4dp" app:layout_constraintStart_toEndOf="@+id/textView9"
+                    android:textColor="#000000" android:textColorHighlight="#194277" android:textColorHint="#194277"
+                    android:textColorLink="#194277"/>
+            <TextView
+                    android:text="Логин: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView8"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" android:layout_marginTop="4dp"
+                    android:textColorHighlight="#194277" android:textColorHint="#194277" android:textColor="#FFFFFF"
+                    android:background="#194277"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp" android:id="@+id/loginic"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    android:layout_marginStart="4dp" app:layout_constraintTop_toTopOf="@+id/textView8"
+                    android:textColor="#000000" android:textColorHighlight="#194277" android:textColorHint="#194277"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TwoName"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" android:layout_marginStart="4dp"
+                    android:textColorHighlight="#194277" android:textColorHint="#194277"
+                    android:textColorLink="#194277" android:textColor="#000000"/>
+            <TextView
+                    android:text="Фамилия и Имя: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="4dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="4dp" android:textColor="#FFFFFF" android:textColorHighlight="#194277"
+                    android:textColorHint="#194277" android:textColorLink="#194277" android:background="#194277"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" android:id="@+id/constraintLayout4" android:layout_marginTop="4dp"
+        >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/constraintLayout5" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+                    android:background="#E5FFE0">
+
+                <dev.iamsabbir.accordionview.AccordionView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:visibility="visible"
+                        app:isAnimated="false"
+                        app:heading="В планах"
+                        app:isExpanded="false"
+                        app:isPartitioned="true"
+                        android:id="@+id/accordionView2" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" android:backgroundTint="#E5FFE0"
+                        android:background="#E5FFE0" android:forceDarkAllowed="@bool/enable_system_job_service_default">
+                    <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#F7FFFFFF"
+                            android:id="@+id/scrollView21">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" android:background="#E5FFE0">
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/TODO"
+                                    app:layoutManager="LinearLayoutManager" android:background="#E5FFE0">
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </ScrollView>
+                </dev.iamsabbir.accordionview.AccordionView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+                    android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:background="#FFEFEF">
+
+                <dev.iamsabbir.accordionview.AccordionView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:visibility="visible"
+                        app:isAnimated="false"
+                        app:heading="Выполнено"
+                        app:isExpanded="false"
+                        app:isPartitioned="true"
+                        android:id="@+id/accordionView4"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="#FFEFEF">
+                    <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#F7FFFFFF"
+                            app:layout_constraintTop_toBottomOf="@+id/imageViewPos"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" android:background="#FFEFEF">
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/COMPLETE"
+                                    app:layoutManager="LinearLayoutManager">
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </ScrollView>
+                </dev.iamsabbir.accordionview.AccordionView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16dp" android:id="@+id/constraintLayout6" android:background="#FCFFDA">
+
+                <dev.iamsabbir.accordionview.AccordionView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:visibility="visible"
+                        app:isAnimated="false"
+                        app:heading="В работе"
+                        app:isExpanded="false"
+                        app:isPartitioned="true"
+                        android:id="@+id/accordionView3"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="#FCFFDA">
+                    <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#F7FFFFFF"
+                            app:layout_constraintTop_toBottomOf="@+id/imageViewPos"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/PROGRESS"
+                                    app:layoutManager="LinearLayoutManager" android:background="#FCFFDA">
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </ScrollView>
+                </dev.iamsabbir.accordionview.AccordionView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

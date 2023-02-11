@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "706598060557",
+    "firebase_url": "https://toolbarapp-6697f-default-rtdb.firebaseio.com",
+    "project_id": "toolbarapp-6697f",
+    "storage_bucket": "toolbarapp-6697f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706598060557:android:eb733292b98bef109c4b44",
+        "android_client_info": {
+          "package_name": "com.example.toolbarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706598060557-rcaotdbcq6otgce26fa1l8nfdjj4unrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toolbarapp",
+            "certificate_hash": "2f8b013fe91f18390ace248de529aae3c23c7b56"
+          }
+        },
+        {
+          "client_id": "706598060557-uqbqj0olp8599n5digm3trkmdemn0ago.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toolbarapp",
+            "certificate_hash": "036021211ee447556822081c35430c2a9cb43f1e"
+          }
+        },
+        {
+          "client_id": "706598060557-ce5p939lk88kur7328agesgl5lgn7kcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtYi2KH7A0uY3d1xyEi6nTCkv4eVH3kWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706598060557-ce5p939lk88kur7328agesgl5lgn7kcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
